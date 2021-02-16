@@ -58,8 +58,10 @@ export class JustCompleteProvider implements CompletionItemProvider {
     workspace.documents.forEach(document => {
       if (this.ignoreGitignore && document['isIgnored']) return
       for (const word of document['words'] as string[]) {
-        if (!words.includes(word) && word.length >= 3) {
-          words.push(word)
+        for (const word_no_underscore of word.split('_')) {
+          if (!words.includes(word_no_underscore) && word_no_underscore.length >= 3) {
+            words.push(word_no_underscore)
+          }
         }
       }
     })
