@@ -19,7 +19,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
       'coc-just-complete',
       config.get<string>('shortcut'),
       null,
-      new JustCompleteProvider(config.get<boolean>('ignoreGitignore')),
+      new JustCompleteProvider(),
       ['_'],
       config.get<number>('priority'),
       [],
@@ -28,7 +28,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
 }
 
 export class JustCompleteProvider implements CompletionItemProvider {
-  constructor(private ignoreGitignore: boolean) {}
+  constructor() {}
 
   provideCompletionItems(document: TextDocument, position: Position): ProviderResult<CompletionItem[]> {
     const doc = workspace.getDocument(document.uri)
@@ -56,7 +56,7 @@ export class JustCompleteProvider implements CompletionItemProvider {
   private gatherWords(): string[] {
     const words: string[] = []
     workspace.documents.forEach(document => {
-      if (this.ignoreGitignore && document['isIgnored']) return
+      if (document['isIgnored']) return
       for (const word of document['words'] as string[]) {
         for (const word_no_underscore of word.split('_')) {
           if (!words.includes(word_no_underscore) && word_no_underscore.length >= 3) {

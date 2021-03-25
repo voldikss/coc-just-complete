@@ -1,6 +1,6 @@
 {
   "name": "coc-just-complete",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "One kind of buffer words completion",
   "main": "lib/index.js",
   "engines": {
@@ -37,11 +37,6 @@
         "just-complete.priority": {
           "type": "number",
           "default": 3
-        },
-        "just-complete.ignoreGitignore": {
-          "type": "boolean",
-          "default": true,
-          "description": "Ignore git ignored files for gathering buffer words"
         }
       }
     }

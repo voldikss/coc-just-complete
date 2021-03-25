@@ -8,9 +8,5 @@
 export interface JustComplete {
   'just-complete.shortcut'?: string;
   'just-complete.priority'?: number;
-  /**
-   * Ignore git ignored files for gathering buffer words
-   */
-  'just-complete.ignoreGitignore'?: boolean;
   [k: string]: unknown;
 }

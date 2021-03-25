@@ -26,10 +26,13 @@ Type: <pre><code>string</code></pre>Default: <pre><code>"just-complete"</code></
 <summary><code>just-complete.priority</code>: .</summary>
 Type: <pre><code>number</code></pre>Default: <pre><code>3</code></pre>
 </details>
-<details>
-<summary><code>just-complete.ignoreGitignore</code>: Ignore git ignored files for gathering buffer words.</summary>
-Type: <pre><code>boolean</code></pre>Default: <pre><code>true</code></pre>
-</details>
+
+<!-- prettier-ignore-end -->
+
+## Related
+
+[coc-dot-complete] buffer source completion triggered by `.`
+[coc-dash-complete] buffer source completion triggered by `-`
 
 <!-- prettier-ignore-end -->
 
