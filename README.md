@@ -3,7 +3,9 @@
 ![publish](https://github.com/voldikss/coc-just-complete/workflows/publish/badge.svg)
 [![npm version](https://badge.fury.io/js/coc-just-complete.svg)](https://badge.fury.io/js/coc-just-complete)
 
-One kind of buffer words completion for (neo)vim
+Coc.nvim extension
+
+Press `_` to trigger buffer source completion in (neo)vim.
 
 ![](https://user-images.githubusercontent.com/20282795/105694302-c5224a00-5f3b-11eb-86b5-8a4e717aa676.gif)
 
@@ -31,8 +33,8 @@ Type: <pre><code>number</code></pre>Default: <pre><code>3</code></pre>
 
 ## Related
 
-[coc-dot-complete] buffer source completion triggered by `.`
-[coc-dash-complete] buffer source completion triggered by `-`
+- [coc-dot-complete] buffer source completion triggered by `.`
+- [coc-dash-complete] buffer source completion triggered by `-`
 
 <!-- prettier-ignore-end -->
 
