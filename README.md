@@ -33,8 +33,8 @@ Type: <pre><code>number</code></pre>Default: <pre><code>3</code></pre>
 
 ## Related
 
-- [coc-dot-complete] buffer source completion triggered by `.`
-- [coc-dash-complete] buffer source completion triggered by `-`
+- [coc-dot-complete](https://github.com/voldikss/coc-dot-complete) buffer source completion triggered by `.`
+- [coc-dash-complete](https://github.com/voldikss/coc-dash-complete) buffer source completion triggered by `-`
 
 <!-- prettier-ignore-end -->
 
